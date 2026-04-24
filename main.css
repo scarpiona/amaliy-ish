@@ -3,8 +3,33 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    overflow-x: hidden;
+}
 body{
     font-family: 'Open Sans', sans-serif;
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+.body-img {
+    position: absolute;
+    top: 77px;
+    right: 0;
+    height: 1491px;
+    object-fit: cover;
+    object-position: left center; 
+}
+.body-img1 {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    height: 1486px;
+    z-index: -1;
+    object-fit: cover;
+    object-position: right center;
 }
 .container{
     width: 100%;
@@ -15,6 +40,8 @@ body{
     padding-right: 20px;
 }
 .header {
+    position: relative;
+    z-index: 1;
     width: 100%;
     max-width: 1144px;
     display: flex;
@@ -28,21 +55,19 @@ body{
 .header-icon1{
     margin-right: 11px;
 }
-.header-icon {
-    
-}
 .header-icons-text {
     margin-left: 19px;
     color: black;
     text-decoration: underline;
 }
 .hero {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 68px;
     padding: 68px 0;
-
     box-shadow: 0 4px 27px 0 rgba(0, 0, 0, 0.25);
 }
 .hero-title {
@@ -80,24 +105,16 @@ body{
     align-items: center;
     row-gap: 100px;
 }
-.clothes-list {
-}
 .clothes-list-img {
     width: 544px;
     height: 675px;
     border: 1px solid #EDEDED;
 }
-.clothes-list-right {
-}
 .clothes-list-right-title {
     margin-bottom: 14px;
-
 }
 .clothes-list-right-text {
     margin-bottom: 83px;
-}
-.clothes-list-right-text-img {
-    
 }
 .clothes-list-right-text1 {
     font-size: 22px;
@@ -126,8 +143,6 @@ body{
     background-color: white;
     padding: 25px 100px;
 }
-.clothes-btn-text{
-}
 .cta {
     padding: 52px 0;
 }
@@ -136,11 +151,9 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-
 .cta-content {
     display: flex;
     align-items: center;
-    
 }
 .cta-content-img {
     width: 47px;
@@ -162,20 +175,16 @@ body{
     width: 46px;
     height: 46px;
 }
-
 .cta-content-text {
     font-size: 14px;
 }
 ul{
     list-style: none;
-    
 }
 .footer {
     padding-top: 23px;
     padding-bottom: 47px;
     box-shadow: 0 4px 27px 0 rgba(0, 0, 0, 0.25);
-
-
 }
 .footer-container{
     display: flex;
@@ -206,8 +215,6 @@ ul{
     display: flex;
     align-items: center;
     color: black;
-}
-.footer-icon {
 }
 .footer-icon-img {
     margin-right: 12px;
